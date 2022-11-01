@@ -409,12 +409,33 @@
               </li>
             </ul>
           </div>
+
+          <div class="form-wrap">
+            <h2 class="title-form-footer">Підпишіться на розсилку</h2>
+            <form name="form-footer" class="form-footer">
+              <label class="footer-label" for="footer-mail"></label>
+              <input
+                class="footer-input"
+                id="footer-mail"
+                type="email"
+                name="person-mail"
+                placeholder="E-mail"
+              />
+              <button type="submit" class="footer-button" data-modal-open>
+                Відправити
+                <svg width="24" height="24">
+                  <use href="./images/icons.svg#icon-icon-send"></use>
+                </svg>
+              </button>
+            </form>
+          </div>
+
         </div>
       </div>
     </footer>
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="iconc-lose" data-modal-close>
+        <button class="iconc-close" data-modal-close>
           <svg width="11px" height="11px">
             <use href="./images/icons.svg#icon-Vector-2"></use>
           </svg>
@@ -452,22 +473,23 @@
             name="person-coment"
             placeholder="Введіть текст"
           ></textarea>
-          
+
           <div class="checkbox-wrap">
             <input
-              class="checkbox-input visually-hidden"
+              class="checkbox-input is-hidden"
               id="terms-checkbox"
               type="checkbox"
               name="terms-checkbox"
             />
-            <svg class="icon-check" width="16" height="15">
+            <svg class="checkbox-icon" vith="16" height="15">
               <use href="./images/icons.svg#icon-icon-check"></use>
             </svg>
             <label class="checkbox-label" for="terms-checkbox">
               Погоджуюся з розсилкою та приймаю
-              <a href="#">Умови договору</a>
+              <a class="form-linc" href="#">Умови договору</a>
             </label>
           </div>
+          <button type="submit" class="form-button" data-modal-open>Відправити</button>
         </form>
       </div>
     </div>
